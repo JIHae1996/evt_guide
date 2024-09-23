@@ -1,0 +1,331 @@
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Jal_Onuel";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "yg-jalnan";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Binggrae-Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RixYeoljeongdo_Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "MaplestoryOTFBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "NotoSerifKR";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Jeonju_gakB";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Jeonju_gakB.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "HSBombaram3_Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Cafe24Ssurround";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "JalnanGothic";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+.page_container {
+    .page_title {
+        color: #292929;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.3;
+        letter-spacing: -0.4px;
+    }
+    .sections {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* intro box 영역 */
+        .intro_box {
+            border-radius: 10px;
+            padding: 30px;
+            background-color: #F7F7F7;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px; 
+            letter-spacing: -0.14px;
+
+            .intro_tite {
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1.7;
+                color: #292929;
+                letter-spacing: -0.2px;
+            }
+
+            .intro_text {
+                color: #595959;
+            }
+
+            .intro_notice {
+                color: #999;
+            }
+        }
+
+          /* category_title_area : 중타이틀 영역 */
+        .category_title_area {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #F1F6FD;
+            box-sizing: border-box;
+
+            .category_main_title {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 38px;
+                color: #3F5ED5;
+                letter-spacing: -0.28px;
+            }
+
+            .category_sub_title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #87A4EF;
+                letter-spacing: -0.16px;
+            }
+        } 
+
+
+         /* section_title : 소타이틀 */
+        .section_title {
+            font-size: 28px;
+            font-style: normal;
+            color: #292929;
+            font-weight: 600;
+            line-height: 38px;
+        }
+        .description_area {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .main_description {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.3;
+            color: #595959;
+            letter-spacing: -0.12px;
+        }
+        .sub_description {
+            position: relative;
+            padding-left: 12px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #595959;
+            letter-spacing: -0.32px;
+
+            &::before {
+                content: '*';
+                position: absolute;
+                top: 3px;
+                left: 0;
+                font-size: 16px;
+            }
+            
+        }
+    }
+
+    .image_area {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 24px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // fontpage
+    .sections.fontpage{
+        .scroll-tab.inner{
+            &::after{
+                margin-top: 36px;
+                display: block;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #EBEBEB;
+            }
+        }
+        .scroll-tab.inner:nth-child(1){
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .scroll-tab.inner:nth-child(2){
+            font-family: 'GmarketSansMedium';
+            .main_description {
+                font-weight: 500;
+            }
+            .sub_description {
+                font-weight: 500;
+            }
+        }
+        .scroll-tab.inner:nth-child(3){
+            font-family: 'yg-jalnan';
+        }
+        .scroll-tab.inner:nth-child(4){
+            font-family: 'Binggrae-Bold';
+        }
+        .scroll-tab.inner:nth-child(5){
+            font-family: 'RixYeoljeongdo_Regular';
+            .main_description {
+                font-weight: 400;
+            }
+            .sub_description {
+                font-weight: 400;
+            }
+        }
+        .scroll-tab.inner:nth-child(6){
+            font-family: 'MaplestoryOTFBold';
+        }
+        .scroll-tab.inner:nth-child(7){
+            font-family: 'Cafe24Ssurround';
+        }
+        .scroll-tab.inner:nth-child(8){
+            font-family: 'NotoSerifKR';
+        }
+        .scroll-tab.inner:nth-child(9){
+            font-family: 'JalnanGothic';
+            .main_description {
+                font-weight: 400;
+            }
+            .sub_description {
+                font-weight: 400;
+            }
+        }
+        .scroll-tab.inner:nth-child(10){
+            font-family: 'HSBombaram3_Regular';
+            .main_description {
+                font-weight: 400;
+            }
+            .sub_description {
+                font-weight: 400;
+            }
+        }
+        .scroll-tab.inner:last-child{
+            &::after{
+                display: none;}
+        }
+        .description_area {
+            gap: 20px;
+        }
+        .section_title {
+            color: #292929;
+            font-family: 'Pretendard';
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: -0.28px;
+        }
+        .main_description {
+            color: #111;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 62px; /* 129.167% */
+            letter-spacing: -1px;
+        }
+        .sub_description {
+            position: relative;
+            padding-left: 0;
+            font-weight: 700;
+            line-height: 36px;
+            color: #111;
+            letter-spacing: -0.32px;
+            font-size: 36px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    
+    // EventType
+    .sections.eventType{
+        .scroll-tab.inner{
+            &::after{
+                margin-top: 36px;
+                display: block;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #EBEBEB;
+            }
+        }
+        .scroll-tab.inner:last-child{
+            &::after{
+                display: none;}
+        }
+        .image_area {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+    
+            img:nth-child(1) {
+                width: 72%
+            }
+            img:nth-child(2) {
+                width: 25%;
+            }
+        }
+    }
+}

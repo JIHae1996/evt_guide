@@ -1,0 +1,27 @@
+.tab_container {
+
+    .tab_item {
+        width: 140px;
+        
+        button {
+            display: block;
+            width: 100%;
+            color: #999;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: -0.14px;
+            text-align: left;
+
+            &.active {
+                color: #3F5ED5;
+                font-weight: 700;
+            }
+        }
+
+        & + .tab_item {
+            margin-top: 8px;
+        }
+    }
+}

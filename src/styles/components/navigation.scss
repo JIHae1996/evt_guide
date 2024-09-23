@@ -1,0 +1,102 @@
+.nav_container {
+    padding: 48px 30px ;
+    background-color: #F7F7F7;
+    border: 1px solid #F2F2F2;
+    min-width: 370px;
+    min-height: calc(100vh - 96px);
+    box-sizing: border-box;
+    nav{
+        position: sticky;
+        top: 162px;
+        left: 0;
+    }
+    ul{
+        & > li.parent{
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s linear;
+
+            &>div{
+                height: 50px;
+                line-height: 50px;
+                padding: 0 18px;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                span.arrow{
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;    
+                    vertical-align:sub;  
+                    transform: rotate(0);
+                    transition: all 0.2s linear;
+                    svg {
+                        path{fill: #292929;}
+                    }
+                }
+                span.navIcon{
+                    margin-right: 6px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;    
+                    vertical-align:sub;
+                }
+            }
+            &>ul {
+                margin: 16px 0 0;
+                padding: 0 0 0 46px;
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.4s ease-in-out;
+                &>li{
+                    margin-bottom: 30px;
+                    padding: 0;
+                    color: #767676;
+                    font-weight: 500;
+                    line-height: 1;
+                    &.active{
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &.on{
+                &>div{
+                    background-color: #F1F6FD;
+                    color: #3F5ED5;
+                    span.arrow{
+                        transform: rotate(-180deg);
+                        svg {
+                            path{ fill: #3F5ED5;}
+                        }
+                    }
+                }
+                &>ul {
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    // .pageLayout{
+    //     .nav_container {
+    //         padding: 150px 30px ;
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .nav_container {
+        width: 356px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .nav_container {
+        width: 300px;
+    }
+}
